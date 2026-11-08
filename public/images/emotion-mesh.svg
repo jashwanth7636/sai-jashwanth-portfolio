@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="emoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414" />
+      <stop offset="50%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#040404" />
+    </linearGradient>
+    <radialGradient id="emoGlow" cx="40%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="emoGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1c1c1c" stroke-width="0.75" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="520" fill="url(#emoGrad)" />
+  <rect width="800" height="520" fill="url(#emoGrid)" opacity="0.6" />
+  <rect width="800" height="520" fill="url(#emoGlow)" />
+
+  <!-- Neural Network Vector Constellation / NLP Emotion Space -->
+  <g stroke="#383838" stroke-width="1" fill="none">
+    <!-- Connecting synaptic vectors -->
+    <line x1="80" y1="120" x2="180" y2="190" stroke="#4a4a4a" />
+    <line x1="80" y1="220" x2="180" y2="190" stroke="#555555" />
+    <line x1="80" y1="320" x2="180" y2="280" stroke="#4a4a4a" />
+    <line x1="80" y1="400" x2="180" y2="280" stroke="#555555" />
+
+    <line x1="180" y1="190" x2="290" y2="150" stroke="#606060" />
+    <line x1="180" y1="190" x2="290" y2="240" stroke="#707070" />
+    <line x1="180" y1="280" x2="290" y2="240" stroke="#707070" />
+    <line x1="180" y1="280" x2="290" y2="350" stroke="#606060" />
+
+    <line x1="290" y1="150" x2="400" y2="190" stroke="#808080" />
+    <line x1="290" y1="240" x2="400" y2="190" stroke="#8B5CF6" stroke-width="1.5" />
+    <line x1="290" y1="240" x2="400" y2="290" stroke="#8B5CF6" stroke-width="1.5" />
+    <line x1="290" y1="350" x2="400" y2="290" stroke="#808080" />
+
+    <!-- Wave Oscillations in Background -->
+    <path d="M 20,440 Q 150,380 300,430 T 600,410 T 800,450" stroke="#333333" stroke-width="1.5" />
+    <path d="M 20,460 Q 150,400 300,450 T 600,430 T 800,470" stroke="#262626" stroke-width="1.5" />
+  </g>
+
+  <!-- Network Nodes -->
+  <g fill="#242424" stroke="#555555" stroke-width="1.5">
+    <circle cx="80" cy="120" r="8" />
+    <circle cx="80" cy="220" r="8" />
+    <circle cx="80" cy="320" r="8" />
+    <circle cx="80" cy="400" r="8" />
+
+    <circle cx="180" cy="190" r="10" fill="#303030" stroke="#888888" />
+    <circle cx="180" cy="280" r="10" fill="#303030" stroke="#888888" />
+
+    <circle cx="290" cy="150" r="12" fill="#383838" stroke="#a0a0a0" />
+    <circle cx="290" cy="240" r="14" fill="#444444" stroke="#c0c0c0" />
+    <circle cx="290" cy="350" r="12" fill="#383838" stroke="#a0a0a0" />
+
+    <circle cx="400" cy="190" r="16" fill="#1c1c1c" stroke="#8B5CF6" stroke-width="2" />
+    <circle cx="400" cy="190" r="6" fill="#8B5CF6" stroke="none" />
+
+    <circle cx="400" cy="290" r="16" fill="#1c1c1c" stroke="#8B5CF6" stroke-width="2" />
+    <circle cx="400" cy="290" r="6" fill="#8B5CF6" stroke="none" />
+  </g>
+
+  <!-- Right Side: Conceptual UI Preview Panel -->
+  <g transform="translate(460, 80)">
+    <rect width="300" height="360" fill="#0c0c0c" stroke="#303030" stroke-width="1" />
+    <rect width="300" height="34" fill="#141414" stroke="#262626" stroke-width="1" />
+    <text x="14" y="21" font-family="'Courier New', monospace" font-size="10" fill="#a0a0a0" letter-spacing="1">NLP // EMOTION DETECTION</text>
+    <circle cx="282" cy="17" r="4" fill="#8B5CF6" />
+
+    <!-- Text Input Simulator -->
+    <rect x="14" y="48" width="272" height="65" fill="#111111" stroke="#282828" />
+    <text x="24" y="68" font-family="'Courier New', monospace" font-size="9" fill="#707070">INPUT_STREAM &gt;</text>
+    <text x="24" y="88" font-family="'Courier New', monospace" font-size="10" fill="#f0f0f0">"The pipeline delivers"</text>
+    <text x="24" y="103" font-family="'Courier New', monospace" font-size="10" fill="#f0f0f0">"exceptional responsiveness!"</text>
+
+    <!-- Predicted Result Badge -->
+    <rect x="14" y="125" width="272" height="38" fill="#151320" stroke="rgba(139,92,246,0.4)" stroke-width="1" />
+    <text x="24" y="148" font-family="'Courier New', monospace" font-size="11" fill="#8B5CF6" font-weight="bold">TOP EMOTION: JOY</text>
+    <text x="260" y="148" font-family="'Courier New', monospace" font-size="11" fill="#8B5CF6" text-anchor="end">94.2%</text>
+
+    <!-- Distribution Bars -->
+    <g transform="translate(14, 180)">
+      <text x="0" y="10" font-family="'Courier New', monospace" font-size="9" fill="#a0a0a0">JOY</text>
+      <text x="272" y="10" font-family="'Courier New', monospace" font-size="9" fill="#a0a0a0" text-anchor="end">94.2%</text>
+      <rect x="0" y="15" width="272" height="6" fill="#181818" />
+      <rect x="0" y="15" width="256" height="6" fill="#8B5CF6" />
+
+      <text x="0" y="38" font-family="'Courier New', monospace" font-size="9" fill="#707070">SURPRISE</text>
+      <text x="272" y="38" font-family="'Courier New', monospace" font-size="9" fill="#707070" text-anchor="end">4.1%</text>
+      <rect x="0" y="43" width="272" height="6" fill="#181818" />
+      <rect x="0" y="43" width="12" height="6" fill="#555555" />
+
+      <text x="0" y="66" font-family="'Courier New', monospace" font-size="9" fill="#707070">NEUTRAL</text>
+      <text x="272" y="66" font-family="'Courier New', monospace" font-size="9" fill="#707070" text-anchor="end">1.2%</text>
+      <rect x="0" y="71" width="272" height="6" fill="#181818" />
+      <rect x="0" y="71" width="5" height="6" fill="#444444" />
+
+      <text x="0" y="94" font-family="'Courier New', monospace" font-size="9" fill="#707070">SADNESS</text>
+      <text x="272" y="94" font-family="'Courier New', monospace" font-size="9" fill="#707070" text-anchor="end">0.3%</text>
+      <rect x="0" y="99" width="272" height="6" fill="#181818" />
+      <rect x="0" y="99" width="2" height="6" fill="#333333" />
+    </g>
+
+    <!-- Footer Model Note -->
+    <text x="14" y="342" font-family="'Courier New', monospace" font-size="8" fill="#555555">MODEL: TF-IDF + NAIVE BAYES / TRANSFORMER</text>
+  </g>
+
+  <!-- Frame Border -->
+  <rect x="15" y="15" width="770" height="490" fill="none" stroke="#282828" stroke-width="1" />
+  <path d="M 15,35 L 15,15 L 35,15" fill="none" stroke="#8B5CF6" stroke-width="2" />
+  <path d="M 785,35 L 785,15 L 765,15" fill="none" stroke="#8B5CF6" stroke-width="2" />
+</svg>

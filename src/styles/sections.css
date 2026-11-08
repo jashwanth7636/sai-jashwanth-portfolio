@@ -1,0 +1,821 @@
+/* ==========================================================================
+   STYLE 2: SECTIONS (ABOUT, SKILLS, FOCUS, EXPERIENCE, EDUCATION, RESUME, CONTACT, FOOTER)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   ABOUT SECTION
+   -------------------------------------------------------------------------- */
+.about-grid-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: flex-start;
+}
+
+.about-lead-text {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+  margin-bottom: 22px;
+}
+
+.about-secondary-text {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  margin-bottom: 34px;
+}
+
+.about-spec-box {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: 10px;
+}
+
+.spec-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.spec-tag {
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+}
+
+.spec-content {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+/* Credentials Column */
+.about-credentials-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.credential-panel, .certifications-panel {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 28px;
+}
+
+.panel-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.panel-badge-code {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--color-accent);
+}
+
+.panel-badge-date {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+}
+
+.credential-role {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 1.45rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.credential-org {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.credential-responsibilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.credential-responsibilities li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.bullet-point {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-weight: bold;
+}
+
+.cert-tags-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cert-tag-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--color-text-secondary);
+}
+
+.accent-icon {
+  color: var(--color-accent);
+}
+
+/* --------------------------------------------------------------------------
+   SKILLS SECTION (6 CATEGORIZED GROUPS)
+   -------------------------------------------------------------------------- */
+.skills-editorial-grid-style2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.skills-group-box {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.skills-group-box:hover {
+  border-color: #555555;
+  transform: translateY(-2px);
+}
+
+.group-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.group-idx-code {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--color-accent);
+}
+
+.group-count {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--color-text-muted);
+}
+
+.group-title-heading {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.group-chips-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-chip-style2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.skill-chip-style2:hover {
+  color: #ffffff;
+}
+
+.chip-bullet-violet {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  opacity: 0.75;
+}
+
+/* --------------------------------------------------------------------------
+   FOCUS SECTION (3 CONTENT BLOCKS)
+   -------------------------------------------------------------------------- */
+.focus-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.focus-card-block {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.focus-card-block:hover {
+  border-color: #555555;
+  transform: translateY(-3px);
+}
+
+.focus-top-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.focus-idx-num {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+}
+
+.focus-arrow-icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-border);
+  display: grid;
+  place-items: center;
+  color: var(--color-text-muted);
+  transition: all 0.2s ease;
+}
+
+.focus-card-block:hover .focus-arrow-icon {
+  border-color: var(--color-accent);
+  color: #ffffff;
+  background-color: var(--color-accent-dim);
+}
+
+.focus-card-title {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 1.45rem;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.focus-card-text {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   EXPERIENCE SECTION (CONFIRMED INTERNSHIP)
+   -------------------------------------------------------------------------- */
+.experience-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.experience-card {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 36px 32px;
+}
+
+.exp-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+
+.exp-tag-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.exp-role-title {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 6px;
+}
+
+.exp-company-sub {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.exp-duration-badge {
+  padding: 6px 14px;
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+}
+
+.exp-responsibilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resp-item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.resp-bullet {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   EDUCATION SECTION
+   -------------------------------------------------------------------------- */
+.education-timeline-stack {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+}
+
+.edu-timeline-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--color-border);
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.edu-year-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edu-big-year {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.edu-status-pill {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  padding: 2px 8px;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  align-self: flex-start;
+}
+
+.edu-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edu-head-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.edu-seq-index {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.edu-degree-text {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.edu-school-text {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.edu-metrics-text {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-accent-hover);
+  margin-top: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   RESUME CTA SECTION (NO PURPLE BANNER - BLACK BG + THIN OUTLINE)
+   -------------------------------------------------------------------------- */
+.resume-box-style2 {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.resume-overline {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.resume-main-heading {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.resume-sub-copy {
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+}
+
+.btn-brutalist-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-brutalist-action:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-hover);
+  background-color: var(--color-accent-dim);
+}
+
+.btn-icon-right {
+  color: var(--color-accent);
+}
+
+/* --------------------------------------------------------------------------
+   CONTACT SECTION
+   -------------------------------------------------------------------------- */
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.contact-lead-sentence {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 30px;
+}
+
+.contact-email-box {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  padding: 24px;
+}
+
+.email-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.email-meta-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--color-text-muted);
+}
+
+.email-status-live {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--color-accent);
+  padding: 2px 6px;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+}
+
+.email-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.email-main-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.email-main-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.btn-copy-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.btn-copy-email:hover {
+  color: #ffffff;
+  border-color: var(--color-accent);
+}
+
+/* Contact Channels Stack */
+.contact-links-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-channel-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  transition: all 0.25s ease;
+}
+
+.contact-channel-card:hover {
+  border-color: #555555;
+  background-color: var(--color-bg-elevated);
+}
+
+.channel-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.channel-icon {
+  color: var(--color-accent);
+}
+
+.channel-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.channel-title {
+  font-family: var(--font-condensed);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.channel-desc {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.channel-arrow {
+  color: var(--color-text-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-channel-card:hover .channel-arrow {
+  color: #ffffff;
+  transform: translate(2px, -2px);
+}
+
+/* --------------------------------------------------------------------------
+   FOOTER (MINIMAL BRUTALIST TECHNICAL)
+   -------------------------------------------------------------------------- */
+.footer-style2 {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  padding: 40px 0 32px;
+}
+
+.footer-grid-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box {
+  font-family: var(--font-condensed);
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 2px 6px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-secondary);
+  color: #ffffff;
+}
+
+.logo-name {
+  font-family: var(--font-condensed);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+}
+
+.footer-headline-tag {
+  font-size: 0.74rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.footer-col-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.footer-social-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.footer-col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.copyright-text {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+}
+
+.btn-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--color-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.btn-back-to-top:hover {
+  color: #ffffff;
+  border-color: var(--color-accent);
+  background-color: var(--color-accent-dim);
+}
+
+/* Responsive Rules for Sections */
+@media (max-width: 960px) {
+  .about-grid-content {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .skills-editorial-grid-style2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .focus-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .edu-timeline-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .resume-box-style2 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+  }
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .footer-col-center {
+    justify-content: flex-start;
+  }
+  .footer-col-right {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-editorial-grid-style2 {
+    grid-template-columns: 1fr;
+  }
+}
